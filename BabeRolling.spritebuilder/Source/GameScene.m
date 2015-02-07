@@ -15,4 +15,12 @@
     NSLog(@"GameScene created");
 }
 
+- (void)exitButtonPressed
+{
+    NSLog(@"exitButtonPressed");
+    CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:1.5];
+    [[CCDirector sharedDirector] presentScene:scene withTransition:transition];
+}
+
 @end
