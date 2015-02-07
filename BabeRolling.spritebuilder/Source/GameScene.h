@@ -8,6 +8,11 @@
 
 #import "CCNode.h"
 
-@interface GameScene : CCNode
+@interface GameScene : CCNode <CCPhysicsCollisionDelegate, CCBAnimationManagerDelegate>
+
+-(void) showPopoverNamed:(NSString*)popoverName;
+-(void) removePopover;
+
+-(void) loadLevelNamed:(NSString*)levelCCB;
 
 @end

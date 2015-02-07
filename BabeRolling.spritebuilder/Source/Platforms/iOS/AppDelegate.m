@@ -28,6 +28,10 @@
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
 
+// TBR
+#import "GameScene.h"
+#import "GameState.h"
+
 @implementation AppController
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -57,9 +61,45 @@
     return YES;
 }
 
-- (CCScene*) startScene
+-(CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"GameScene"];
+    /*
+     #pragma message "REMOVE ME"
+     // load first level instantly ...
+     CCScene* scene = [CCBReader loadAsScene:@"GameScene"];
+     GameScene* gameScene = (GameScene*)scene.children.firstObject;
+     [GameState sharedGameState].currentLevel = 1;
+     [gameScene loadLevelNamed:@"Levels/Level1"];
+     return scene;
+     */
+    
+    return [CCBReader loadAsScene:@"MainScene"];
+}
+
+-(void) performSelector:(SEL)selector onNode:(CCNode*)node withObject:(id)object recursive:(BOOL)recursive
+{
+    if ([node respondsToSelector:selector])
+    {
+        [node performSelector:selector withObject:object afterDelay:0];
+    }
+    
+    if (recursive)
+    {
+        for (CCNode* child in node.children)
+        {
+            [self performSelector:selector onNode:child withObject:object recursive:YES];
+        }
+    }
+}
+
+-(void) applicationWillResignActive:(UIApplication *)application
+{
+    // forward this to the currently running scene's first node if it implements the same selector
+    CCScene* scene = [CCDirector sharedDirector].runningScene;
+    [self performSelector:_cmd onNode:scene withObject:application recursive:YES];
+    
+    // let CCAppDelegate handle default behavior
+    [super applicationWillResignActive:application];
 }
 
 @end

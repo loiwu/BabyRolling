@@ -92,6 +92,17 @@
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
 		B78A0B10198AF87200C63841 /* Published-Android in Resources */ = {isa = PBXBuildFile; fileRef = B78A0B0F198AF87200C63841 /* Published-Android */; };
+		D976610F1A86211F005AB88F /* CloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D97660FA1A86211F005AB88F /* CloseButton.m */; };
+		D97661101A86211F005AB88F /* GameMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D97660FC1A86211F005AB88F /* GameMenuLayer.m */; };
+		D97661111A86211F005AB88F /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = D97660FE1A86211F005AB88F /* GameState.m */; };
+		D97661121A86211F005AB88F /* MainMenuButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = D97661001A86211F005AB88F /* MainMenuButtons.m */; };
+		D97661131A86211F005AB88F /* MainMenuLevelSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = D97661021A86211F005AB88F /* MainMenuLevelSelect.m */; };
+		D97661141A86211F005AB88F /* PlayTimelineWhenTriggered.m in Sources */ = {isa = PBXBuildFile; fileRef = D97661041A86211F005AB88F /* PlayTimelineWhenTriggered.m */; };
+		D97661151A86211F005AB88F /* SceneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D97661061A86211F005AB88F /* SceneManager.m */; };
+		D97661161A86211F005AB88F /* SettingsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D97661081A86211F005AB88F /* SettingsLayer.m */; };
+		D97661171A86211F005AB88F /* SoftBodyDrawNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D976610A1A86211F005AB88F /* SoftBodyDrawNode.m */; };
+		D97661181A86211F005AB88F /* SpringBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D976610C1A86211F005AB88F /* SpringBoard.m */; };
+		D97661191A86211F005AB88F /* Trigger.m in Sources */ = {isa = PBXBuildFile; fileRef = D976610E1A86211F005AB88F /* Trigger.m */; };
 		D9D229A81A85EBB300CFEF0B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D229A71A85EBB300CFEF0B /* GameScene.m */; };
 /* End PBXBuildFile section */
 
@@ -230,6 +241,28 @@
 		B78A0B0F198AF87200C63841 /* Published-Android */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Published-Android"; sourceTree = "<group>"; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
+		D97660F91A86211F005AB88F /* CloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloseButton.h; sourceTree = "<group>"; };
+		D97660FA1A86211F005AB88F /* CloseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloseButton.m; sourceTree = "<group>"; };
+		D97660FB1A86211F005AB88F /* GameMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuLayer.h; sourceTree = "<group>"; };
+		D97660FC1A86211F005AB88F /* GameMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameMenuLayer.m; sourceTree = "<group>"; };
+		D97660FD1A86211F005AB88F /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		D97660FE1A86211F005AB88F /* GameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameState.m; sourceTree = "<group>"; };
+		D97660FF1A86211F005AB88F /* MainMenuButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuButtons.h; sourceTree = "<group>"; };
+		D97661001A86211F005AB88F /* MainMenuButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuButtons.m; sourceTree = "<group>"; };
+		D97661011A86211F005AB88F /* MainMenuLevelSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuLevelSelect.h; sourceTree = "<group>"; };
+		D97661021A86211F005AB88F /* MainMenuLevelSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuLevelSelect.m; sourceTree = "<group>"; };
+		D97661031A86211F005AB88F /* PlayTimelineWhenTriggered.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayTimelineWhenTriggered.h; sourceTree = "<group>"; };
+		D97661041A86211F005AB88F /* PlayTimelineWhenTriggered.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayTimelineWhenTriggered.m; sourceTree = "<group>"; };
+		D97661051A86211F005AB88F /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
+		D97661061A86211F005AB88F /* SceneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneManager.m; sourceTree = "<group>"; };
+		D97661071A86211F005AB88F /* SettingsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsLayer.h; sourceTree = "<group>"; };
+		D97661081A86211F005AB88F /* SettingsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsLayer.m; sourceTree = "<group>"; };
+		D97661091A86211F005AB88F /* SoftBodyDrawNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftBodyDrawNode.h; sourceTree = "<group>"; };
+		D976610A1A86211F005AB88F /* SoftBodyDrawNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftBodyDrawNode.m; sourceTree = "<group>"; };
+		D976610B1A86211F005AB88F /* SpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoard.h; sourceTree = "<group>"; };
+		D976610C1A86211F005AB88F /* SpringBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringBoard.m; sourceTree = "<group>"; };
+		D976610D1A86211F005AB88F /* Trigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trigger.h; sourceTree = "<group>"; };
+		D976610E1A86211F005AB88F /* Trigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trigger.m; sourceTree = "<group>"; };
 		D9D229A61A85EBB300CFEF0B /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Source/GameScene.h; sourceTree = "<group>"; };
 		D9D229A71A85EBB300CFEF0B /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = Source/GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -464,6 +497,28 @@
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
 				D352B48019EC608A00829775 /* MetalShaders */,
+				D97660F91A86211F005AB88F /* CloseButton.h */,
+				D97660FA1A86211F005AB88F /* CloseButton.m */,
+				D97660FB1A86211F005AB88F /* GameMenuLayer.h */,
+				D97660FC1A86211F005AB88F /* GameMenuLayer.m */,
+				D97660FD1A86211F005AB88F /* GameState.h */,
+				D97660FE1A86211F005AB88F /* GameState.m */,
+				D97660FF1A86211F005AB88F /* MainMenuButtons.h */,
+				D97661001A86211F005AB88F /* MainMenuButtons.m */,
+				D97661011A86211F005AB88F /* MainMenuLevelSelect.h */,
+				D97661021A86211F005AB88F /* MainMenuLevelSelect.m */,
+				D97661031A86211F005AB88F /* PlayTimelineWhenTriggered.h */,
+				D97661041A86211F005AB88F /* PlayTimelineWhenTriggered.m */,
+				D97661051A86211F005AB88F /* SceneManager.h */,
+				D97661061A86211F005AB88F /* SceneManager.m */,
+				D97661071A86211F005AB88F /* SettingsLayer.h */,
+				D97661081A86211F005AB88F /* SettingsLayer.m */,
+				D97661091A86211F005AB88F /* SoftBodyDrawNode.h */,
+				D976610A1A86211F005AB88F /* SoftBodyDrawNode.m */,
+				D976610B1A86211F005AB88F /* SpringBoard.h */,
+				D976610C1A86211F005AB88F /* SpringBoard.m */,
+				D976610D1A86211F005AB88F /* Trigger.h */,
+				D976610E1A86211F005AB88F /* Trigger.m */,
 				D9D229A61A85EBB300CFEF0B /* GameScene.h */,
 				D9D229A71A85EBB300CFEF0B /* GameScene.m */,
 			);
@@ -866,10 +921,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97661191A86211F005AB88F /* Trigger.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
+				D97661141A86211F005AB88F /* PlayTimelineWhenTriggered.m in Sources */,
+				D97661151A86211F005AB88F /* SceneManager.m in Sources */,
+				D97661161A86211F005AB88F /* SettingsLayer.m in Sources */,
+				D97661171A86211F005AB88F /* SoftBodyDrawNode.m in Sources */,
 				D9D229A81A85EBB300CFEF0B /* GameScene.m in Sources */,
+				D976610F1A86211F005AB88F /* CloseButton.m in Sources */,
+				D97661101A86211F005AB88F /* GameMenuLayer.m in Sources */,
+				D97661121A86211F005AB88F /* MainMenuButtons.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
+				D97661131A86211F005AB88F /* MainMenuLevelSelect.m in Sources */,
+				D97661111A86211F005AB88F /* GameState.m in Sources */,
+				D97661181A86211F005AB88F /* SpringBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
